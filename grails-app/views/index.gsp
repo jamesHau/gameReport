@@ -79,17 +79,6 @@
 				}
 			}
 		</style>
-				<g:javascript>
-		$( document ).ready(function() {
- 
-    $( "a" ).click(function( event ) {
- 
-        alert( "Thanks for visiting!" );
- 
-    });
- 
-});
-		</g:javascript>
 	</head>
 	<body>
 		<a href="#page-body" class="skip"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>

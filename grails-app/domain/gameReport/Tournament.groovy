@@ -1,7 +1,5 @@
 package gameReport
 
-class Tournament {
-
-    static constraints = {
-    }
+class Tournament extends SeasonItem
+{
 }

@@ -1,11 +1,9 @@
 package gameReport
 
-import gameReport.Person;
-
 import org.springframework.dao.DataIntegrityViolationException
 
 class PersonController {
-
+	static scaffold = true
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
 
     def index() {

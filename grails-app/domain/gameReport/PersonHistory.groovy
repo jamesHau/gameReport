@@ -2,11 +2,13 @@ package gameReport
 
 import java.util.Date;
 
-class Season {
+class PersonHistory {
 
-	int year
-	static hasMany = [leagues: League, tournaments: Tournament]
+	static belongsTo = [person: Person]
 	
+	RoleType roleType
+	Date start
+	Date end
 	// Automatically updated by GORM
 	Date dateCreated
 	
@@ -14,6 +16,5 @@ class Season {
 	Date lastUpdated
 	
     static constraints = {
-		year min: 1900, max:2100, nullable: false
     }
 }

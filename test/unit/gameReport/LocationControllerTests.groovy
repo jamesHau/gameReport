@@ -3,9 +3,6 @@ package gameReport
 
 
 import org.junit.*
-
-import gameReport.Location;
-import gameReport.LocationController;
 import grails.test.mixin.*
 
 @TestFor(LocationController)

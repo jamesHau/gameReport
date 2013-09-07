@@ -1,10 +1,10 @@
 package gameReport
 
-import gameReport.Match;
-
 import org.springframework.dao.DataIntegrityViolationException
 
 class MatchController {
+	
+	static scaffold = true
 
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
 

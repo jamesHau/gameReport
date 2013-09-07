@@ -1,11 +1,9 @@
 package gameReport
 
-import gameReport.Team;
-
 import org.springframework.dao.DataIntegrityViolationException
 
 class TeamController {
-
+	static scaffold = true
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
 
     def index() {

@@ -1,11 +1,9 @@
 package gameReport
 
-import gameReport.Season;
-
 import org.springframework.dao.DataIntegrityViolationException
 
 class SeasonController {
-
+	static scaffold = true
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
 
     def index() {

@@ -3,9 +3,6 @@ package gameReport
 
 
 import org.junit.*
-
-import gameReport.Person;
-import gameReport.PersonController;
 import grails.test.mixin.*
 
 @TestFor(PersonController)

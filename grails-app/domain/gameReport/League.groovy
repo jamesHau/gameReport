@@ -1,7 +1,5 @@
 package gameReport
 
-class League {
-
-    static constraints = {
-    }
+class League extends SeasonItem
+{
 }

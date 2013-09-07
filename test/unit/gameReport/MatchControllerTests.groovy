@@ -3,9 +3,6 @@ package gameReport
 
 
 import org.junit.*
-
-import gameReport.Match;
-import gameReport.MatchController;
 import grails.test.mixin.*
 
 @TestFor(MatchController)

@@ -2,7 +2,7 @@ package gameReport
 
 
 
-import gameReport.Role;
+import gameReport.PersonHistory;
 import grails.test.mixin.*
 
 import org.junit.*
@@ -10,8 +10,8 @@ import org.junit.*
 /**
  * See the API for {@link grails.test.mixin.domain.DomainClassUnitTestMixin} for usage instructions
  */
-@TestFor(Role)
-class RoleTests {
+@TestFor(PersonHistory)
+class PersonHistoryTests {
 
     void testSomething() {
        fail "Implement me"
