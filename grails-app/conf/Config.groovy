@@ -63,6 +63,9 @@ grails.hibernate.cache.queries = false
 grails.plugins.twitterbootstrap.fixtaglib = true
 grails.plugins.twitterbootstrap.defaultBundle = 'bundle_bootstrap'
 
+//Jquery
+grails.views.javascript.library="jquery"
+
 environments {
     development {
         grails.logging.jul.usebridge = true
