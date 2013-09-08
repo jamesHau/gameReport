@@ -35,4 +35,9 @@ class Match {
 		}
 		matchRecords minSize: 0   
     }
+	
+	@Override
+	public String toString() {
+		return homeTeam + " - " + awayTeam
+	}
 }

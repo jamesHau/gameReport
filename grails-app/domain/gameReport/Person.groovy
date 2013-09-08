@@ -8,6 +8,7 @@ class Person {
 	String middleName
 	String lastName
 	String personNumber
+	String email
 	
 	static hasMany = [matchRecords: MatchRecord, historyRecords: PersonHistory]
 	
@@ -18,9 +19,13 @@ class Person {
 	Date lastUpdated
 	
     static constraints = {
-		firstName blank:false 
 		middleName blank:true 
-		lastName blank:false 
-		personNumber blank:false, unique: true
+		personNumber unique: true
+		email email:true
     }
+	
+	@Override
+	public String toString() {
+		return firstName + middleName?:"" + lastName
+	}
 }

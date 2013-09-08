@@ -9,8 +9,6 @@ class MatchRecord
 	int suspensions
 	Boolean recievedRedCard
 	Boolean goalKeeper
-	Date start
-	Date end
 	
 	static belongsTo = [match:Match]
 	

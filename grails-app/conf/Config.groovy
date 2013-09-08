@@ -63,6 +63,15 @@ grails.hibernate.cache.queries = false
 grails.plugins.twitterbootstrap.fixtaglib = true
 grails.plugins.twitterbootstrap.defaultBundle = 'bundle_bootstrap'
 
+grails.gorm.default.constraints = {
+	'*'(blank: false)
+	start validator: {value, obj ->
+		value <= obj.end
+	}
+	end validator: {value, obj ->
+		value >= obj.start
+	}
+}
 //Jquery
 grails.views.javascript.library="jquery"
 

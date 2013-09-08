@@ -16,5 +16,7 @@ class PersonHistory {
 	Date lastUpdated
 	
     static constraints = {
+		start shared: "start"
+		end shared: "end"
     }
 }

@@ -23,4 +23,9 @@ class Location {
 		city blank:false
 		country blank:false
     }
+	
+	@Override
+	public String toString() {
+		return name
+	}
 }
