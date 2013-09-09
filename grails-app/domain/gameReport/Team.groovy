@@ -21,10 +21,10 @@ class Team {
     static constraints = {
 		name unique: true
 		trainer nullable: true, validator: {val, obj ->
-			obj.enemyTeam? val == null:val != null
+			val? !obj.enemyTeam:obj.enemyTeam
 		}
 		captain nullable: true, validator: {val, obj ->
-			obj.enemyTeam? val == null:val != null
+			val? !obj.enemyTeam:obj.enemyTeam
 		}
     }
 	

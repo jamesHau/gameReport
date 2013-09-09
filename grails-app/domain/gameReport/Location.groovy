@@ -9,6 +9,7 @@ class Location {
 	String postalCode
 	String city
 	String country
+	String googleMapsLink
 
 	// Automatically updated by GORM
 	Date dateCreated
@@ -17,11 +18,10 @@ class Location {
 	Date lastUpdated
 	
     static constraints = {
-		name blank:false, unique:false
-		address blank:false, unique:false
+		name unique:false
+		address unique:false
 		postalCode blank:true
-		city blank:false
-		country blank:false
+		googleMapsLink nullable:true, url:true
     }
 	
 	@Override

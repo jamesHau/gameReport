@@ -13,9 +13,8 @@ class TeamTests{
 
     void testName()
 	{
-	//	mockForConstraintsTests(Team)
-	//	Team team = new Team(enemyTeam: true, name: "Skuru")
-	//	assertTrue team.validate()
-		fail "WTF"
+		Team team = new Team(enemyTeam: true, name: "Skuru")
+		assertTrue(team.validate()) 
+
     }
 }
